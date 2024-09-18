@@ -36,6 +36,6 @@ resource "aws_instance" "web-server" {
   echo "<html><h1> Welcome  </h1></html>" >> /var/www/html/index.html       
   EOF 
   tags = {
-  Name = "web_instance"           
+    Name = "web_instance"           
   }           
 }
