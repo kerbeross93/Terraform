@@ -33,7 +33,7 @@ resource "aws_instance" "web-server" {
   yum install httpd -y
   systemctl start httpd
   systemctl enable httpd
-  echo "<html><h1> Welcome to Whizlabs. Happy Learning... </h1></html>" >> /var/www/html/index.html       
+  echo "<html><h1> Welcome  </h1></html>" >> /var/www/html/index.html       
   EOF 
   tags = {
   Name = "web_instance"           
